@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    background: rgb(226, 218, 218);
+}
+
+header {
+    background: rgb(73, 13, 73);
+}
+
+#head {
+    width: 980px;
+    height: 80px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+#head-logo {
+    width: 150px;
+    border: 1px solid black;
+    background: goldenrod;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.head-nav {
+    list-style: none;
+    text-align: right;
+}
+
+.head-nav>li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.head-nav>li>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+}
+
+.head-icon-github {
+    visibility: hidden;
+    width: 30px;
+    height: 34px;
+    background: url(../img/icon-github.png);
+    position: absolute;
+    top: 46px;
+    right: 10px;
+}
+
+@media screen and (min-width:980px) {
+    .head-icon-github {
+        visibility: visible;
+    }
+}
+
+.content {
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 0;
+}
+.con-left {
+    width: 485px;
+    background: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+
+}
+ .cl-brief {
+    height: 300px;
+    width: 980px;
+    position: relative;
+   
+}
+.cl-pic-outline {
+    width: 170px;
+    height: 170px;
+    background:rgb(226, 218, 218);    
+    position: relative;
+    top: -50px;
+    left: 405px;
+    border-radius: 50%;
+    
+}
+.cl-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(../img/headpic.jpg) no-repeat center ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+} 
+.cl-name {
+    vertical-align: top;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 350px;
+    width: 100px;
+
+}
+.cl-info {
+    font-size: 14px;
+    display: inline-block;
+    width: 350px;
+    margin-left: 80px;
+    text-indent: 34px;
+}
+.cl-phonenumber {
+    height: 400px;
+    width: 980px;
+    position: relative;
+    margin-top: 50px;
+}
+.cl-restpic-outline {
+    width: 120px;
+    height: 120px;
+    background:rgb(226, 218, 218);
+    position: relative;
+    top: -50px;
+    left: 425px;
+    border-radius: 50%;
+}
+.cl-restpic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url(../img/headpic.jpg) no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.cl-restname {
+    vertical-align: top;
+    font-size: 26px;
+    display: inline-block;
+    margin-left: 305px;
+    width: 120px;
+}
+
+.cl-restinfo {
+    font-size: 14px;
+    line-height: 2;
+    display: inline-block;
+    width: 350px;
+    margin-left: 70px;
+    text-indent: 34px;
+    position: relative;
+}
+.cl-time-component {
+   width: 430px; 
+   position: relative;
+   display: inline-block;
+   margin-left: 88px;
+}
+.cl-time-outline {
+    width:70px;
+    position: absolute;
+    left:-70px;
+    text-align: center;
+    border: 1px solid transparent;
+    background: rgb(226, 218, 218);
+    border-radius: 6px/3px;
+}
+.cl-time {
+    width: 50px;
+    border: 1px solid transparent;
+    background: white;
+    margin: 5px 10px 5px 10px;
+    border-radius: 4px/2px;
+   
+}
+.cl-time-component>p {
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+/* 不设置高度时，为con-left在上分别设置颜色即可 */
+/* 设置高度时，为con-right的背景给con-left 组件的背景在上分别设置颜色即可 */
+/* component 给一个边框 在不设置高度，出现的效果还比较好看*/
+.con-right {
+    width: 485px;
+    height: 1650px;
+    background: white;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+footer {
+    background: black;
+}
+
+.foot-nav {
+    list-style: none;
+    width: 978px;
+    margin: 0 auto;
+    border: 1px solid rebeccapurple;
+    text-align: center;
+    font-size: 14px;
+}
+
+.foot-nav>li {
+    display: inline-block;
+}
+
+.foot-nav>li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.foot-nav>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-link {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+
+.foot-link>li {
+    text-align: left;
+    display: inline-block;
+    color: rgb(218, 201, 201);
+    vertical-align: top;
+}
+
+.foot-link>li:not(:last-child) {
+    margin-right: 90px;
+}
+
+.foot-link>li>ul {
+    list-style: none;
+    text-align: left;
+}
+
+.foot-link>li>ul>li>a:hover {
+    color: white;
+}
+
+.copyright {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright>span {
+    font-size: 12px;
+    color: rgb(117, 101, 101);
+}
+
+
+

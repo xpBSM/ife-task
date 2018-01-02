@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="aDiv">
+            <div class="bDiv">
+                <div id="cDiv"></div>
+            </div>
+            <div class="bDiv"></div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+     $('#container').find('#aDiv').find('.bDiv').find(':empty').css('background','yellow').parent().css('background', 'red');
+     $('#container').find('#aDiv').find('.bDiv').find(':empty').end().css('background', 'purple');
+    });
+</script>
+
+</html>

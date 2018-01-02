@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #test {
+            width: 100px;
+            height: 100px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">nihao</div>
+</body>
+<script>
+    var id = document.getElementById('test');
+    id.addEventListener('click', hander(2, 3), false);
+    id.attachEvent("on" + 'click', handler(2, 3));
+    function hander(a, b) {
+        return function(e) {
+            console.log(e,window.event);
+            alert(a, b);
+        }
+    }
+</script>
+</html>

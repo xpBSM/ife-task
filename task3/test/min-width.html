@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            line-height: 1.5;
+        }
+        .swap {
+            height: 100%;
+        }
+        .head {
+            height: 20%;
+            min-height: 120px;
+            background: green;
+        }
+
+        .outer {
+            height: 80%;
+            min-height: 480px;
+            border: 5px solid  yellow;
+        }
+
+        .inner1 {
+            background: red;
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        .a {
+            height: 10%;
+            background: blue;
+        }
+        .b {
+            height: 80%;
+            background: greenyellow;
+        }
+        .c {
+            height: 10%;
+            background: red;
+        }
+        .inner2 {
+            background: purple;
+            height: 80%;
+            min-height: 480px;
+            width: 50%;
+            margin-left: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="swap">
+        <div class="head"></div>
+        <div class="outer">
+            <div class="inner1">
+                <div class="a">aaa</div>
+                <div class="b">bbb</div>
+                <div class="c">ccc</div>
+            </div>
+            <div class="inner2">
+                <span>nihao2</span>
+                <span>nihao2</span>
+                <span>nihao2</span>
+                <span>nihao3</span>
+                <div>222</div>
+                <div>222</div>
+                <div>222</div>
+                <div>222</div>
+                <div>222</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "jqueryjsondemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.2",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpBSM/ife-task.git"
+  },
+  "author": "xpBSM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpBSM/ife-task/issues"
+  },
+  "homepage": "https://github.com/xpBSM/ife-task#readme"
+}

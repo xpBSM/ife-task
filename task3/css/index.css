@@ -1,0 +1,308 @@
+html,
+body,
+div,
+p,
+span,
+ul,
+li,
+input,
+textarea,
+button{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+    line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+.container {
+    height: 100%;
+
+}
+.head {
+    height: 140px;
+    min-width: 1300px;
+    background: black;
+}
+.head>p {
+    font-size: 40px;
+    line-height:140px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-left: 40px;
+}
+.theme {
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    width: 100%;
+    min-width: 1300px;
+    min-height: 460px;
+    
+}
+.left {
+    height: 100%;
+    width: 250px;
+    float: left;
+    background: #d4bbbb;
+}
+.left-swap {
+    border-right: 1px solid #666;
+    height: 100%;
+
+}
+.left-head {
+    height: 10%;
+    display: table;
+    width: 100%;
+}
+.allTasks {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    border-bottom: 1px solid #666;
+}
+.left-classify {
+    height: 80%;
+    overflow: scroll;
+    
+}
+.left-classhead {
+    padding: 10px 0px 10px 10px;
+    padding-left: 10px;
+}
+.comicon-file,
+.comicon-delete {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.comicon-file {
+    background:url(../img/folder.png)no-repeat ;
+}
+.comicon-delete {
+    margin-left: 40px;
+    background: url(../img/close.png)no-repeat ;
+    margin-bottom: 2px;
+    display: none;
+}
+.dele-defalut {
+    display: inline-block;
+}
+.com-head {
+    display: inline-block;
+}
+.com-nav1 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.Tasks {
+    padding-left: 30px;
+}
+.left-foot {
+    width: 100%;
+    height: 10%;
+    display: table;
+}
+.com-add {
+    display: table-cell;
+    vertical-align: middle;
+    border-top: 1px solid #666;
+}
+.comicon-add {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    padding-right: 10px;
+    background: url(../img/add.png) no-repeat;
+}
+
+.com-hover:hover {
+    background: rgb(190, 178, 178);
+    cursor: pointer;
+}
+
+.middle {
+    height: 100%;
+    width: 250px;
+    float: left;
+    background: #d4bbbb;
+}
+.md-head {
+    height: 10%;
+    display: table;
+    width: 100%;
+
+}
+.md-nav {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom:1px solid #666;
+}
+.md-nav>li {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+}
+.md-tasks {
+    height: 80%;
+    overflow: scroll;
+    /* border-bottom: 1px solid #666; */
+}
+.unfulfilled {
+    background: #5f4dc7;
+}
+.md-add {
+    height: 10%;
+    display: table;
+    width: 100%;
+}
+.com-add {
+    display: table-cell;
+    vertical-align: middle;
+}
+.right {
+    margin-left: 501px;
+    min-width: 800px;
+    height: 100%;
+    background: orange;
+}
+.right-head {
+    height: 10%;
+    width: 100%;
+    display: table;
+}
+.com-righthead {
+    display:table-cell;
+    vertical-align: middle;
+    border-bottom: 1px solid #666;
+}
+
+.todohead {
+    outline: 0;
+    border: transparent;
+    background: orange;
+    border-bottom: 1px solid wheat;
+    padding-left: 10px;
+    font-size: 20px;
+    
+}
+.validate {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    color: #666;
+}
+.datewrap>.validate {
+    width: 120px;
+}
+.com-icon {
+    display: inline-block;
+    margin-left: 45%;
+}
+.comicon-write {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/edit.png) no-repeat;
+    cursor: pointer;
+
+}
+.comicon-fulled {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/success.png)no-repeat;
+    margin-left: 10px;
+}
+.right-date {
+    height: 10%;
+    width: 100%;
+    display: table;
+}
+.datewrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+.datetext {
+    outline: 0;
+    border: transparent;
+    background: orange;
+    font-size: 20px;
+    border-bottom: 1px solid wheat;
+}
+.right-foot {
+    height:80%;
+}
+.writable {
+    height: 70%;
+}
+#tarea {
+    width: 99%;
+    height: 99%;
+    font-size: 24px;
+    resize: none;
+    outline: none;
+}
+.count {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bt-group {
+    position: absolute;
+    bottom: 10px;
+}
+button {
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+}
+.com-selected {
+    background: rgb(230, 217, 217);
+}
+.com-tasksByDate {
+   width: 100%;
+}
+.com-date {
+    padding-left: 10px;
+}
+.com-nav {
+    padding-left: 20px;
+}
+.com-color {
+    color: white;
+}
+.com-date-selected {
+    color: white;
+}
+
+.left-classify::-webkit-scrollbar-track,
+.md-tasks::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+	background-color: #d4bbbb;
+}
+.left-classify::-webkit-scrollbar,
+.md-tasks::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+	background-color: #d4bbbb;
+}
+.left-classify::-webkit-scrollbar-thumb,
+.md-tasks::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}

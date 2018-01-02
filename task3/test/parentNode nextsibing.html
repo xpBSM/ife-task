@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">nihao</div>
+    <div class="test2">nihao</div>fddfdfd<div class="test2">nihao</div>
+    <div class="test3">nihao</div>
+</body>
+<script>
+var t1 = document.querySelector('.test1');
+var t2 = document.querySelector('.test2');
+var t3 = document.querySelector('.test3');
+var all = document.querySelectorAll('div[class^="task"]');
+var e = null;
+function next(ele) {
+    while(ele = ele.nextSibling){
+        if(ele && ele.nodeType === 1) {
+            break;
+        }
+    }
+    return ele;
+}
+
+console.log(t2.parentNode.parentNode);
+console.log(t2.nextSibling);
+console.log(t2.nextElementSibling);
+console.log(next(t2));
+
+</script>
+</html>
